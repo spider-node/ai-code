@@ -1,0 +1,55 @@
+{
+  "spider_url": "http://spider-node-service.spider-vertx:8081",
+  "studio_url": "http://127.0.0.1:5000",
+  "es": {
+    "url": "http://47.109.67.130:9200",
+    "username": "elastic",
+    "password": "aB.967426"
+  },
+  "model_config": [
+    {
+      "config_name": "ollama_code",
+      "model_type": "openai_chat",
+      "model_name": "llama3.1:8b-instruct-fp16",
+      "api_key": "xxx",
+      "organization": "xxx",
+      "client_args": {
+        "base_url": "http://47.109.67.130:11435/v1"
+      },
+      "generate_args": {
+        "temperature": 0.5
+      }
+    },
+    {
+      "model_type": "dashscope_chat",
+      "config_name": "qwen_config",
+      "model_name": "qwen-plus",
+      "api_key": "sk-66188116bb914e6784374de3bb394908"
+    },
+    {
+      "model_type": "dashscope_chat",
+      "config_name": "qwen_config_max",
+      "model_name": "qwen-max",
+      "api_key": "sk-66188116bb914e6784374de3bb394908"
+    },
+    {
+      "model_type": "dashscope_chat",
+      "config_name": "qwen2_config",
+      "model_name": "qwen2-72b-instruct",
+      "api_key": "sk-66188116bb914e6784374de3bb394908"
+    },
+    {
+      "config_name": "deepseek_code",
+      "model_type": "openai_chat",
+      "model_name": "deepseek-coder",
+      "api_key": "sk-caef67a3c65b40059d12b97a395f8031",
+      "organization": "xxx",
+      "client_args": {
+        "base_url": "https://api.deepseek.com/v1"
+      },
+      "generate_args": {
+        "temperature": 0.5
+      }
+    }
+  ]
+}

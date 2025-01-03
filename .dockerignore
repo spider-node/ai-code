@@ -1,0 +1,5 @@
+# .dockerignore
+
+# 忽略虚拟环境
+.venv/
+venv/
