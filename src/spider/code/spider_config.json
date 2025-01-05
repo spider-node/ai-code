@@ -1,5 +1,5 @@
 {
-  "spider_url": "http://spider-node-service.spider-vertx:8081",
+  "spider_url": "http://spider-node-service.spider-vertx:80",
   "studio_url": "http://127.0.0.1:5000",
   "es": {
     "url": "http://47.109.67.130:9200",

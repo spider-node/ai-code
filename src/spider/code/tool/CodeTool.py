@@ -138,7 +138,7 @@ def deploy_code_to_application_tool(business_code: str, param_code: str, result_
         'taskService': task_service
     }
 
-    with open("spider_config.json", "r", encoding="utf-8") as f:
+    with open("src/spider/code/spider_config.json", "r", encoding="utf-8") as f:
         model_configs = json.load(f)
         url = model_configs['spider_url'] + "/deploy/plugin"
         result = spider_request(url=url, param=request)

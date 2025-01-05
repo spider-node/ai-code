@@ -34,7 +34,7 @@ def query_domain_info_v1(son_area: str, area: str) -> json:
         area (`str`)
             domain information that needs to be loaded
     """
-    with open("spider_config.json", "r", encoding="utf-8") as f:
+    with open("src/spider/code/spider_config.json", "r", encoding="utf-8") as f:
         model_configs = json.load(f)
         url = model_configs['spider_url'] + "/query/son_area"
     request = {"sonArea": son_area, "area": area}

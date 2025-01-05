@@ -15,7 +15,7 @@ class SqlAgentManager:
     def __init__(self):
         self.agent_executor_map = {}
         config = ConfigParser()
-        config.read('settings.ini')
+        config.read('/usr/src/app/src/spider/code/settings.ini')
         self.url = config.get('TONG_YI', 'url')
         self.key = config.get('TONG_YI', 'key')
         self.mode = config.get('TONG_YI', 'model')

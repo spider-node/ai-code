@@ -4,15 +4,12 @@ from fastapi import FastAPI
 import agentscope
 from agentscope.prompt import SystemPromptComparer, ChineseSystemPromptGenerator, EnglishSystemPromptGenerator
 from src.spider.code.agent.spider_code_team_factory import SpiderCodeTeamFactory
-from src.spider.code.agent.sql_agent_manager import SqlAgentManager
 from src.spider.code.config.agent_config import senior_java_programming_expert_config, code_assistant
 from src.spider.code.config.model_config import model_config
 
 app = FastAPI()
 
-sql_agent_factory = SqlAgentManager()
-
-with open("spider_config.json", "r", encoding="utf-8") as f:
+with open("src/spider/code/spider_config.json", "r", encoding="utf-8") as f:
     model_configs = json.load(f)
     studio_url = model_configs['studio_url']
 

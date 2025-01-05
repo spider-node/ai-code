@@ -797,7 +797,7 @@ class SpiderCodeTeamFactory:
                                 current_role: str, domain_info: dict, task_id: str, domain_base_id: list[int],
                                 domain_function_version_id: str, need_Data_Flow: bool, data_flow: dict,
                                 flow_data_desc: str) -> None:
-        with open("spider_config.json", "r", encoding="utf-8") as f:
+        with open("src/spider/code/spider_config.json", "r", encoding="utf-8") as f:
             model_configs = json.load(f)
             spider_url = model_configs['spider_url']
         inputs = {"business_requirements": business_requirements,
